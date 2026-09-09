@@ -57,7 +57,7 @@ function closeCheckout(){
   document.getElementById('checkout').classList.remove('open');
 }
 
-async function placeOrder(){location.href='/public/pedido.html?order='+d.orderId;
+async function placeOrder(){
   const customer={
     name:document.getElementById('name').value.trim(),
     email:document.getElementById('email').value.trim(),
@@ -92,9 +92,9 @@ async function placeOrder(){location.href='/public/pedido.html?order='+d.orderId
   if(d.checkoutUrl){
     location.href=d.checkoutUrl;
   }else{
-    location.href='/pedido.html?order='+d.orderId;
+    location.href='/public/pedido.html?order='+d.orderId;
   }
+  
 }
-
 load();
 update();
