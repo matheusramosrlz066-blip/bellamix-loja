@@ -57,7 +57,7 @@ function closeCheckout(){
   document.getElementById('checkout').classList.remove('open');
 }
 
-async function placeOrder(){
+async function placeOrder(){location.href='/public/pedido.html?order='+d.orderId;
   const customer={
     name:document.getElementById('name').value.trim(),
     email:document.getElementById('email').value.trim(),
