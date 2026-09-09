@@ -165,9 +165,9 @@ app.post('/api/orders', async (req,res) => {
         })),
         payer: { name: customer.name, email: customer.email },
         back_urls: {
-          success: `${base}/pedido.html?order=${orderId}&status=success`,
-          pending: `${base}/pedido.html?order=${orderId}&status=pending`,
-          failure: `${base}/pedido.html?order=${orderId}&status=failure`
+          success: `${base}/public/pedido.html?order=${orderId}&status=success`,
+pending: `${base}/public/pedido.html?order=${orderId}&status=pending`,
+failure: `${base}/public/pedido.html?order=${orderId}&status=failure`
         },
         auto_return: 'approved',
         notification_url: `${base}/api/payments/webhook`
