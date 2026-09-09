@@ -82,7 +82,7 @@ app.use(session({
   saveUninitialized: false,
   cookie: { httpOnly: true, sameSite: 'lax', secure: process.env.NODE_ENV === 'production', maxAge: 1000*60*60*8 }
 }));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname));
 
 const money = c => (c/100).toLocaleString('pt-BR', { style:'currency', currency:'BRL' });
 const shippingFor = subtotal => subtotal >= Math.round(Number(process.env.FREE_SHIPPING_FROM || 199)*100) ? 0 : Math.round(Number(process.env.SHIPPING_PRICE || 14.90)*100);
