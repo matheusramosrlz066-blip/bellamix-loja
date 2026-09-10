@@ -1,10 +1,161 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BellaMix Cosméticos</title><link rel="stylesheet" href="/public/style.css"></head>body>
-<div class="top">🚚 Frete grátis acima de R$ 199 · 🔒 Compra segura · 💳 Pagamento Mercado Pago</div>
-<header><a class="logo" href="/">BellaMix <small>COSMÉTICOS</small></a><div class="search"><input id="q" placeholder="Buscar produtos..."><button onclick="load()">Buscar</button></div><button class="cart" onclick="openCart()">🛒 Carrinho <b id="count">0</b></button></header>
-<nav><a href="#" onclick="category('')">Todos</a><a href="#" onclick="category('maquiagem')">Maquiagem</a><a href="#" onclick="category('skincare')">Skincare</a><a href="#" onclick="category('cabelos')">Cabelos</a><a href="#" onclick="category('perfumes')">Perfumes</a><a href="#" onclick="category('unhas')">Unhas</a></nav>
-<section class="hero"><div><h1>Sua beleza, seu estilo, seu momento.</h1><p>Produtos de beleza selecionados para você.</p><a href="#produtos" class="btn">Comprar agora</a></div></section>
-<main><h2 id="produtos">Destaques da loja</h2><div id="grid" class="grid"></div></main>
-<div id="drawer" class="drawer"><div class="panel"><button class="x" onclick="closeCart()">×</button><h2>Seu carrinho</h2><div id="cart"></div><div class="total">Total: <b id="total">R$ 0,00</b></div><button class="btn full" onclick="checkout()">Finalizar pedido</button></div></div>
-<div id="checkout" class="drawer"><div class="panel"><button class="x" onclick="closeCheckout()">×</button><h2>Finalizar compra</h2><p>Seus dados serão usados apenas para processar e entregar o pedido.</p><input id="name" placeholder="Nome completo"><input id="email" type="email" placeholder="E-mail"><input id="phone" placeholder="WhatsApp / telefone"><input id="address" placeholder="Endereço e número"><input id="city" placeholder="Cidade/UF"><input id="cep" placeholder="CEP"><button class="btn full" onclick="placeOrder()">Ir para pagamento seguro</button><small>Você será redirecionado ao Mercado Pago para pagar com Pix, cartão e outros meios disponíveis.</small></div></div>
-<footer>© 2026 BellaMix Cosméticos · Atendimento pelo WhatsApp · Compra segura</footer>
-<script <script src="/public/app.js"></script>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Theus Ofertas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            🛍️ Theus Ofertas
+        </div>
+
+        <button class="menu">☰</button>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h1>Ofertas incríveis<br>para você!</h1>
+
+            <p>
+                Produtos selecionados e ofertas que valem a pena.
+            </p>
+
+            <a href="#produtos" class="botao">
+                🔥 Ver ofertas
+            </a>
+        </section>
+
+        <section class="busca">
+            <input
+                type="text"
+                id="campoBusca"
+                placeholder="🔎 Buscar produtos..."
+            >
+        </section>
+
+        <section class="categorias">
+
+            <h2>Categorias</h2>
+
+            <div class="categorias-lista">
+                <button>🔥 Ofertas</button>
+                <button>💄 Beleza</button>
+                <button>🏠 Casa</button>
+                <button>📱 Eletrônicos</button>
+            </div>
+
+        </section>
+
+        <section id="produtos">
+
+            <h2>🔥 Ofertas em destaque</h2>
+
+            <div class="produtos">
+
+                <article class="produto">
+
+                    <div class="imagem-produto">
+                        🛍️
+                    </div>
+
+                    <h3>Produto em destaque</h3>
+
+                    <p class="preco">
+                        R$ 29,90
+                    </p>
+
+                    <a href="#" class="comprar">
+                        Comprar
+                    </a>
+
+                </article>
+
+
+                <article class="produto">
+
+                    <div class="imagem-produto">
+                        ✨
+                    </div>
+
+                    <h3>Oferta especial</h3>
+
+                    <p class="preco">
+                        R$ 49,90
+                    </p>
+
+                    <a href="#" class="comprar">
+                        Comprar
+                    </a>
+
+                </article>
+
+
+                <article class="produto">
+
+                    <div class="imagem-produto">
+                        📱
+                    </div>
+
+                    <h3>Produto popular</h3>
+
+                    <p class="preco">
+                        R$ 79,90
+                    </p>
+
+                    <a href="#" class="comprar">
+                        Comprar
+                    </a>
+
+                </article>
+
+
+                <article class="produto">
+
+                    <div class="imagem-produto">
+                        💄
+                    </div>
+
+                    <h3>Produto de beleza</h3>
+
+                    <p class="preco">
+                        R$ 39,90
+                    </p>
+
+                    <a href="#" class="comprar">
+                        Comprar
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <h3>🛍️ Theus Ofertas</h3>
+
+        <p>
+            Encontre ofertas e produtos selecionados.
+        </p>
+
+        <small>
+            © 2026 Theus Ofertas
+        </small>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
